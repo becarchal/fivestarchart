@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8"/>
+    <title>五星电器报表</title>
+    <meta name="Keywords" content="TEST" />
+    <meta name="description" content="TEST" />
+	<link href="./package/bootstrap/bootstrapdist/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+	<link href="css/manageReport.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="./package/jquery/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="./package/bootstrap/bootstrapdist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/utils/tool.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header" class="header color-0">
+      <!--<a id="back" class="fsbutton col-sm-1" href="#"><img src="./image/common/back.png" height=100% width=100% alt="返回"></a>-->
+      <!--<a id="yingyong" class="fsbutton col-sm-1" href="#"><img src="./image/common/yingyong.png" height="100%" width="100%" alt="应用"></a>-->
+      <div class="headTitle"><p class="text-center">销售数据统计</p></div>
+    </div>
+    <div id="sideBar" class="sideBar">
+      <div id="sideBarContent" class="sideBarContent">
+        <p class="text-center"><a href="./html/tableBootstrap.html">弹出层1</a></p>
+        <p class="text-center"><a href="./html/mychart.html">弹出层2</a></p>
+        <p class="text-center"><a href="./html/mychart.html">弹出层3</a></p>
+        <p class="text-center"><a href="./html/mychart.html">弹出层4</a></p>
+        <p class="text-center"><a href="./html/mychart.html">弹出层5</a></p>
+        <p class="text-center"><a href="./html/mychart.html">弹出层6</a></p>
+      </div>
+      <div id="sideBarMask" class="sideBarMask"></div>
+    </div>
+    <div class="fscontainer">
+      <div class="fschartdropdowntab" >
+          <div class="height-80">
+            <p class="col-sm-10 color-3 height-full">销售总统计</p>
+            <div class="text-center height-full">
+              <div class="fsdroptitle height-full" id="fsdrop1title"><a href="#">每日</a><span class="glyphicon glyphicon-chevron-down fsicon"></span></div>
+              <ul class="nav nav-tabs hide" role="tablist" id="fsdrop1"> 
+                <li class="active"><a href="#fsdropcontent1">每日</a></li> 
+                <li><a href="#fsdropcontent1">每周</a></li> 
+                <li><a href="#fsdropcontent1">每月</a></li> 
+                <li><a href="#fsdropcontent1">每季</a></li> 
+                <li><a href="#fsdropcontent1">每年</a></li> 
+              </ul> 
+            </div>
+         </div>
+          <div class="tab-content tab-fsbox"> 
+            <div class="tab-pane active" id="fsdropcontent1">
+              <div class="fstabboxcontent">
+                <div class="fsboxl">
+                  <div class="fsbox1">
+                    <div class="col-sm-4">
+                      <img src="./image/common/statistics_icon_01.png" alt="" >
+                    </div>
+                    <div class="fsbox-rt col-sm-8">
+                      <h3></h3>
+                      <p>销售额(万元)</p>
+                    </div>
+                  </div>
+                  <div class="fsbox2">
+                    <div class="col-sm-4">
+                      <img src="./image/common/statistics_icon_03.png" alt="" >
+                    </div>
+                    <div class="fsbox-rt col-sm-8">
+                      <h3></h3>
+                      <p>销售达成</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="fsboxr">
+                  <div class="fsbox1">
+                    <div class="col-sm-4">
+                      <img src="./image/common/statistics_icon_02.png" alt="" >
+                    </div>
+                    <div class="fsbox-rt col-sm-8">
+                      <h3></h3>
+                      <p>销售额(万元)</p>
+                    </div>
+                  </div>
+                  <div class="fsbox2">
+                    <div class="col-sm-4">
+                      <img src="./image/common/statistics_icon_04.png" alt="" >
+                    </div>
+                    <div class="fsbox-rt col-sm-8">
+                      <h3></h3>
+                      <p>销售同比</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </div> 
+      </div>
+      <div class="fschartdropdowntab" >
+          <div class="height-80 color-chart">
+            <p class="col-sm-10 color-3 height-full">销售总统计</p>
+            <div class="text-center height-full">
+              <div class="fsdroptitle fsdropcharttitle height-full" id="fsdrop2title"><a href="#">每日</a><span class="glyphicon glyphicon-chevron-down fsicon"></span></div>
+              <ul class="nav nav-tabs fstabchart hide" role="tablist" id="fsdrop2"> 
+                <li class="active"><a href="#fsdrop2content1">每日</a></li> 
+                <li><a href="#fsdrop2content1">每周</a></li> 
+                <li><a href="#fsdrop2content1">每月</a></li> 
+              </ul> 
+            </div>
+         </div>
+          <div class="tab-content tab-fschart"> 
+            <div class="tab-pane active" id="fsdrop2content1">
+              <div class="fstabchartcontent">
+                <div id="manageReportday" class="manageReport"></div>
+              </div>
+            </div> 
+          </div> 
+      </div>
+      <div class="fschartdropdowntab" >
+          <div class="height-80 color-table">
+            <p class="col-sm-10 color-3 height-full">销售总统计</p>
+            <div class="text-center height-full">
+             <div class="fsdroptitle fsdroptabletitle height-full" id="fsdrop3title"><a href="#">每日</a><span class="glyphicon glyphicon-chevron-down fsicon"></span></div>
+              <ul class="nav nav-tabs fstabtableright hide" role="tablist" id="fsdrop3"> 
+                <li class="active"><a href="#fsdrop3content1">每日</a></li> 
+                <li><a href="#fsdrop3content1">每周</a></li> 
+                <li><a href="#fsdrop3content1">每月</a></li> 
+                <li><a href="#fsdrop3content1">每季</a></li> 
+                <li><a href="#fsdrop3content1">每年</a></li> 
+              </ul> 
+            </div>
+         </div>
+          <div class="tab-content tab-fstable"> 
+            <div class="tab-pane active" id="fsdrop3content1">
+              <div class="fstabtablecontent">
+                <ul class="nav nav-tabs fstabtable" role="tablist" id="tabletab1">
+                  <li id="branch"><a href="#tabletab1content1">分部</a></li>
+                  <li id="category"><a href="#tabletab1content1">品类</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tabletab1content1">
+                    <table id="tabletab1table1"></table>
+                  </div>
+                  <!--<div class="tab-pane active" id="tabletab1content2">
+                    <table id="tabletab1table2"></table>
+                  </div>-->
+                </div>
+              </div>
+            </div> 
+          </div> 
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="./package/echart/echarts.js"></script> 
+<script type="text/javascript" src="./package/bootstrap/bootstraptable/bootstrap-table.js"></script> 
+<script type="text/javascript" src="./package/bootstrap/bootstraptable/bootstrap-table-zh-CN.js"></script> 
+<script type="text/javascript" src="js/common/base.js"></script> 
+<script type="text/javascript" src="js/manageReport.js"></script>
+</html>

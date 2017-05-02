@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+.manageReport {
+    width: 100%;
+    height: 750px;
+}
+.tab-fsbox {
+    height: 500px!important;
+    overflow: hidden;
+}
+.tab-fschart {
+    height: 850px!important;
+    overflow: hidden;
+}
+.tab-fstable {
+    overflow: hidden;
+}
+.fsboxl {
+    float: left;
+    padding-right: 30px;
+    width: 50%;
+}
+.fsboxr {
+    float: left;
+    padding: 0;
+    width: 50%;
+}
+.fsbox1 {
+    padding: 40px 38px 40px 40px;
+    width: 100%;
+    height: 190px;
+    line-height: 110px;
+    background: #fff url('./../image/common/statistics_background.png') no-repeat;
+    background-size: 100% 100%;
+}
+.fsbox2 {
+    padding: 40px 38px 40px 40px;
+    margin-top: 30px;
+    width: 100%;
+    height: 190px;
+    line-height: 110px;
+    background: #fff url('./../image/common/statistics_background.png') no-repeat;
+    background-size: 100% 100%;
+}
+.fsbox-rt {
+    height: 110px;
+    line-height: 25px;
+}
+.fsbox-rt p{
+    font-weight: normal;
+    font-size: 1.2vmax;
+    text-align: center;
+}
+.fsbox-rt h3{
+    font-weight: normal;
+    font-size: 2vmax;
+    text-align: center;
+}
+.fstabchartcontent {
+    margin-top: 50px;
+}
+.fstabtablecontent {
+    margin: 50px 30px;
+}
+.fstabboxcontent {
+    margin: 50px 30px;
+}
+.fstabtable {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.fstabtable > li {
+    float: left;
+    width: 120px;
+    height: 60px;
+    margin-bottom: -2px;
+    background-color: #e7e7e7;
+    z-index: 1000;
+}
+.fstabtable > li:nth-child(1) {
+    margin-left: 1px;
+}
+.fstabtable > li > a {
+  color: #333333;
+  font-size: 28px;
+  text-align: center;
+  margin-right: 2px;
+  line-height: 1.42857143;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+.fstabtable > li.active > a,
+.fstabtable > li.active > a:hover,
+.fstabtable > li.active > a:focus {
+  color: #333333;
+  text-align: center;
+  font-size: 28px;
+  background-color: #fe7612;
+  cursor: default;
+  border: none;
+  border-bottom-color: transparent;
+}
+.fstabtable > li.active,
+.fstabtable > li.active:hover,
+.fstabtable > li.active:focus {
+  color: #333333;
+  font-size: 28px;
+  background-color: #fe7612;
+  cursor: default;
+  border: none;
+  border-bottom-color: #fe7612;
+}
+.tableheader {
+    background-color: red;
+}
+.fstabchart > li.active > a,
+.fstabchart > li.active > a:hover,
+.fstabchart > li.active > a:focus {
+  color: #333333;
+  font-size: 28px;
+  background-color: #81dcf9;
+  cursor: default;
+  border: none;
+  border-bottom-color: #fe7612;
+}
+.fstabchart > li.active,
+.fstabchart > li.active:hover,
+.fstabchart > li.active:focus {
+  color: #333333;
+  font-size: 28px;
+  background-color: #81dcf9;
+  cursor: default;
+  border: none;
+  border-bottom-color: transparent;
+}
+.fstabtableright > li.active > a,
+.fstabtableright > li.active > a:hover,
+.fstabtableright > li.active > a:focus {
+  color: #333333;
+  font-size: 28px;
+  background-color: #fef854;
+  cursor: default;
+  border: none;
+  border-bottom-color: transparent;
+}
+.fstabtableright > li.active,
+.fstabtableright > li.active:hover,
+.fstabtableright > li.active:focus {
+  color: #333333;
+  font-size: 28px;
+  background-color: #fef854;
+  cursor: default;
+  border: none;
+  border-bottom-color: transparent;
+}
+.fstable > thead > tr {
+    height: 60px;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 26px;
+    color: #fff;
+    background-color: #fe7612;
+    border: none;
+}
+/*.fstable > thead > tr > th:nth-child(2), .fstable > thead > tr > th:nth-child(3) {
+    height: 60px;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 32px;
+    color: #fff;
+    background-color: #fe7612;
+    border: none;
+}*/
+.fstable > thead > tr > th {
+    border: none;
+}
